@@ -1,4 +1,4 @@
-import { sum, subtract, multiply, divide } from "../src";
+const { sum, subtract, multiply, divide }  = require("../src");
 
 describe("Calculadora", () => {
     test("Deve somar números positivos", () => {
@@ -6,7 +6,7 @@ describe("Calculadora", () => {
     });
 
     test("Deve somar números negativos", () => {
-        expect(sum(2, 3)).toBe(-1);
+        expect(sum(-2, -3)).toBe(-1);
     });
 
     test("Deve subtrair números positivos", () => {
@@ -14,7 +14,7 @@ describe("Calculadora", () => {
     });
 
     test("Deve subtrair números negativos", () => {
-        expect(subtract(-2, -3)).toBe(-5);
+        expect(subtract(-2, -3)).toBe(1);
     });
 
     test("Deve dividir corretamente", () => {
