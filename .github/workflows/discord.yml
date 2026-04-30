@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Notificar Discord em caso de falha
-        if: failure()
+      - name: Notificar Discord em caso de sucesso
+        if: success()
         run: |
           curl -H "Content-Type: application/json" \
           -X POST \
-          -d '{"content":"❌ Build falhou no repositório!"}' \
+          -d '{"content":"Build OK no repositório!"}' \
           ${{ secrets.DISCORD_WEBHOOK }}
