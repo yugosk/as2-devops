@@ -7,9 +7,9 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "npx jest"
   },
-  "dependencies": {
+  "devDependencies": {
     "jest": "^30.3.0"
   }
 }

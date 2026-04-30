@@ -6,7 +6,7 @@ describe("Calculadora", () => {
     });
 
     test("Deve somar números negativos", () => {
-        expect(sum(-2, -3)).toBe(-1);
+        expect(sum(-2, -3)).toBe(-5);
     });
 
     test("Deve subtrair números positivos", () => {
